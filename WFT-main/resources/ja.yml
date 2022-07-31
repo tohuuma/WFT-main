@@ -1,0 +1,42 @@
+# japanese language for WFT
+
+# Name for the language file
+name: "ja"
+
+
+# Main prefix for the plugin messages
+prefix: "&l&8[&r&aWFT&l&8]"
+
+# Main command language options
+command:
+  lable: 'wft'
+  description: 'フローティングテキストの管理'
+  usage: '使用方法: /wft help'
+  permission: 'wft.command.use'
+  aliases: ['ft', 'wfloatingtext', 'floatingtext', 'wolfiesft']
+  sender: '&コマンドはプレイヤー専用です'
+  help: "<===== WFT HELP =====>{LINE}Command: /wft <arguments: mixed>{LINE}Arguments:{LINE}{LINE} add:{LINE}    Description: Add a floating-text{LINE}  Usage: /wft add (<name: string> [text: string]){LINE}{LINE} remove:{LINE}    Description: Remove a floating-text{LINE}    Usage: /wft remove (<name: string>){LINE}{LINE} edit:{LINE}    Description: Change a floating-text's text{LINE}    Usage: /wft edit (<name: string> [newText: string]){LINE}{LINE} tp:{LINE}     Description: Teleport to a floating-text{LINE}    Usage: /wft tp (<name: string>){LINE}{LINE} tphere:{LINE}    Description: Teleport a floating-text to you{LINE}    Usage: /wft tphere (<name: string>){LINE}{LINE} help:{LINE}    Description: Get help with WFT{LINE}    Usage: /wft help{LINE}<==== WFT HELP ====>"
+
+message:
+  not-found: "テキスト {NAME} は見つかりませんでした"
+  exists: "テキスト {NAME} は既に存在します"
+  remove: "テキスト {NAME} の削除に成功しました"
+  add: "テキスト {NAME} の作成に成功しました"
+  update: "テキスト {NAME}の更新に成功しました"
+
+form:
+  create:
+    title: "フローティングテキストを作成しました"
+    content: "以下のフォームに必要事項を入力し、新しいフローティングテキストを作成してください"
+    name-title: "フローティングテキスト名"
+    name-placeholder: "Unique identifier"
+    text-title: "フローティングテキスト内容"
+    text-placeholder: "色に&を使用"
+
+  edit:
+    title: "フローティングテキストの編集"
+    content: "フォームから {NAME} のコンテンツを編集してください"
+    text-title: "フローティングテキスト内容"
+    text-placeholder: "色に&を使用"
+
+  list-title: "フローティングテキスト"
